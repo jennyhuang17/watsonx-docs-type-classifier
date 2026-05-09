@@ -1,0 +1,8 @@
+gradio
+sentence-transformers
+scikit-learn
+joblib
+numpy
+matplotlib
+seaborn
+datasets

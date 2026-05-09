@@ -1,0 +1,59 @@
+condition_id,doc_id,text,true_label,predicted_label
+A,C5F5ACC006CD6F06BE3266EE98F89FABF4F6FBAF,"Troubleshooting information for SPSS Modeler
+Troubleshooting SPSS Modeler The information in this section provides troubleshooting details for issues you may encounter in SPSS Modeler.",how-to,conceptual
+A,51426DCF985B97AF6172727AFCF353A481591560,"Create the data handler
+Create the data handler Each party in a Federated Learning experiment must get a data handler to process their data. You or a data scientist must create the data handler. A dat",conceptual,how-to
+A,B193A2795BDEF17A5D204CDD18188A767E2FE7B7,"Tokens and tokenization
+Tokens and tokenization A token is a collection of characters that has semantic meaning for a model. Tokenization is the process of converting the words in your prompt into tok",how-to,conceptual
+A,57AB3726FA10435D26878C626F61988F7305B9E8,"Building a chart from the chart type gallery
+Building a chart from the chart type gallery Use chart type gallery for building charts. Following are general steps for building a chart from the gallery.",how-to,conceptual
+A,23060B35041C9ABD00099B1E0B1D83DAFF453C6D,"Collaboration roles for governance
+Collaboration roles for governance Review the collaboration roles for managing access to governance tools such as inventories, AI use cases, and evaluations. User ro",conceptual,how-to
+A,C324305E8F756140B7B96492D73D35BB32794119,"Marking a project as sensitive
+Marking a project as sensitive When you create a project, you can mark the project as sensitive to prevent project collaborators from moving sensitive data out of the pr",conceptual,how-to
+A,98AC4398E3EA902007D99E5BDB0686AEF04A4DAA,"Specifying values for collection data (SPSS Modeler)
+Specifying values for collection data Collection fields display non-geospatial data that's in a list. The only item you can set for the Collection ",how-to,conceptual
+A,3491F666270894EE4BE071FD4A8551DF94CB9889,"Defining class attributes and methods
+Defining class attributes and methods Any variable that's bound in a class is a class attribute. Any function defined within a class is a method. Methods receive ",how-to,conceptual
+A,40DEFBE604B3629CAF8855A6D00EC14A0A6C92F3,"Watson Machine Learning on IBM watsonx
+Watson Machine Learning on IBM watsonx Watson Machine Learning is part of IBM® watsonx.ai. Watson Machine Learning provides a full range of tools for your team t",conceptual,how-to
+A,F8EBEE6125BEE635DD8AF7BF2F6340D58CE99958,"Evaluating prompt templates in deployment spaces
+Evaluating prompt templates in deployment spaces You can evaluate prompt templates in deployment spaces to measure the performance of foundation model ",how-to,conceptual
+A,204F36069EE071B185A1BCE8370946A50BDDCDD5,"Creating synthetic data from imported data
+Creating synthetic data from imported data Supported data sources for Synthetic Data Generator. Using Synthetic Data Generator, you can connect to your data ",conceptual,how-to
+B,51426DCF985B97AF6172727AFCF353A481591560,"Create the data handler
+Create the data handler Each party in a Federated Learning experiment must get a data handler to process their data. You or a data scientist must create the data handler. A dat",conceptual,how-to
+B,B193A2795BDEF17A5D204CDD18188A767E2FE7B7,"Tokens and tokenization
+Tokens and tokenization A token is a collection of characters that has semantic meaning for a model. Tokenization is the process of converting the words in your prompt into tok",how-to,conceptual
+B,57AB3726FA10435D26878C626F61988F7305B9E8,"Building a chart from the chart type gallery
+Building a chart from the chart type gallery Use chart type gallery for building charts. Following are general steps for building a chart from the gallery.",how-to,conceptual
+B,23060B35041C9ABD00099B1E0B1D83DAFF453C6D,"Collaboration roles for governance
+Collaboration roles for governance Review the collaboration roles for managing access to governance tools such as inventories, AI use cases, and evaluations. User ro",conceptual,how-to
+B,C324305E8F756140B7B96492D73D35BB32794119,"Marking a project as sensitive
+Marking a project as sensitive When you create a project, you can mark the project as sensitive to prevent project collaborators from moving sensitive data out of the pr",conceptual,how-to
+B,21DB0146B79B8256259507C62876E01ADA143BD6,"Measurement levels (SPSS Modeler)
+Measurement levels The measure, also referred to as measurement level, describes the usage of data fields in SPSS Modeler. You can specify the Measure in the node pro",conceptual,how-to
+B,F8EBEE6125BEE635DD8AF7BF2F6340D58CE99958,"Evaluating prompt templates in deployment spaces
+Evaluating prompt templates in deployment spaces You can evaluate prompt templates in deployment spaces to measure the performance of foundation model ",how-to,conceptual
+B,204F36069EE071B185A1BCE8370946A50BDDCDD5,"Creating synthetic data from imported data
+Creating synthetic data from imported data Supported data sources for Synthetic Data Generator. Using Synthetic Data Generator, you can connect to your data ",conceptual,how-to
+C,C5F5ACC006CD6F06BE3266EE98F89FABF4F6FBAF,"Troubleshooting information for SPSS Modeler
+Troubleshooting SPSS Modeler The information in this section provides troubleshooting details for issues you may encounter in SPSS Modeler.",how-to,conceptual
+C,51426DCF985B97AF6172727AFCF353A481591560,"Create the data handler
+Create the data handler Each party in a Federated Learning experiment must get a data handler to process their data. You or a data scientist must create the data handler. A dat",conceptual,how-to
+C,B193A2795BDEF17A5D204CDD18188A767E2FE7B7,"Tokens and tokenization
+Tokens and tokenization A token is a collection of characters that has semantic meaning for a model. Tokenization is the process of converting the words in your prompt into tok",how-to,conceptual
+C,23060B35041C9ABD00099B1E0B1D83DAFF453C6D,"Collaboration roles for governance
+Collaboration roles for governance Review the collaboration roles for managing access to governance tools such as inventories, AI use cases, and evaluations. User ro",conceptual,how-to
+C,C324305E8F756140B7B96492D73D35BB32794119,"Marking a project as sensitive
+Marking a project as sensitive When you create a project, you can mark the project as sensitive to prevent project collaborators from moving sensitive data out of the pr",conceptual,how-to
+C,98AC4398E3EA902007D99E5BDB0686AEF04A4DAA,"Specifying values for collection data (SPSS Modeler)
+Specifying values for collection data Collection fields display non-geospatial data that's in a list. The only item you can set for the Collection ",how-to,conceptual
+C,3491F666270894EE4BE071FD4A8551DF94CB9889,"Defining class attributes and methods
+Defining class attributes and methods Any variable that's bound in a class is a class attribute. Any function defined within a class is a method. Methods receive ",how-to,conceptual
+C,D476F3E93D23F52EF1D5079343D92DB793E3AD5E,"Decision Optimization output data definition
+Output data definition When submitting your job you can define what output data you want and how you collect it (as either inline or referenced data). For ",how-to,conceptual
+C,40DEFBE604B3629CAF8855A6D00EC14A0A6C92F3,"Watson Machine Learning on IBM watsonx
+Watson Machine Learning on IBM watsonx Watson Machine Learning is part of IBM® watsonx.ai. Watson Machine Learning provides a full range of tools for your team t",conceptual,how-to
+C,204F36069EE071B185A1BCE8370946A50BDDCDD5,"Creating synthetic data from imported data
+Creating synthetic data from imported data Supported data sources for Synthetic Data Generator. Using Synthetic Data Generator, you can connect to your data ",conceptual,how-to

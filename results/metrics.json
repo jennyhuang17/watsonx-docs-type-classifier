@@ -1,0 +1,29 @@
+[
+  {
+    "condition_id": "A",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "classifier": "LogisticRegression",
+    "train_accuracy": 0.8785714285714286,
+    "train_macro_f1": 0.878565232920047,
+    "test_accuracy": 0.8166666666666667,
+    "test_macro_f1": 0.8166157265907197
+  },
+  {
+    "condition_id": "B",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "classifier": "LinearSVC",
+    "train_accuracy": 0.9714285714285714,
+    "train_macro_f1": 0.9714271136282463,
+    "test_accuracy": 0.8666666666666667,
+    "test_macro_f1": 0.8665183537263625
+  },
+  {
+    "condition_id": "C",
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "classifier": "LogisticRegression",
+    "train_accuracy": 0.8642857142857143,
+    "train_macro_f1": 0.8642787897341702,
+    "test_accuracy": 0.8333333333333334,
+    "test_macro_f1": 0.8333333333333334
+  }
+]
