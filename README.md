@@ -30,6 +30,8 @@ Hugging Face Hub:
 | Model | <https://huggingface.co/itsjhuang/watsonx-docs-type-classifier> |
 | Demo (Gradio Space) | <https://huggingface.co/spaces/itsjhuang/watsonx-docs-type-classifier> |
 
+The accompanying 2-page academic report is available as [`report.pdf`](report.pdf).
+
 For more information about how to load the dataset and the model from the Hugging Face hub, check the Hugging Face pages. Alternatively, you can try out with the deployed Hugging Face demo.
 
 
@@ -41,7 +43,7 @@ The dataset is derived from the Hugging Face dataset
 
 ### Document classification
 
-Each page is labeled by the type
+Each page is labelled by the type
 of information a user would primarily use it for:
 
 - `conceptual` (200 examples) — overviews, capability descriptions, reference
@@ -75,7 +77,7 @@ The dataset was split 70/15/15 with stratification and seed 42:
 | validation | 30 | 30 | 60 |
 | test | 30 | 30 | 60 |
 
-## 4. Experiments
+## 3. Experiments
 
 Three conditions, each isolating one variable (embedding choice or classifier
 choice) against the baseline:
@@ -103,35 +105,39 @@ Best model: **Condition B** (MiniLM embeddings + LinearSVC), selected by test
 macro F1. This model is exported to `models/best_model.joblib` and served by
 the Gradio demo.
 
-## 5. Repository Structure
+## 4. Repository Structure
 
 ```
-IR-HW1/
+watsonx-docs-type-classifier/
 ├── README.md                       # this file
-├── report.md                       # 2-page academic report
+├── report.pdf                      # 2-page academic report
 ├── annotation.md                   # annotation guidelines and filtering rules
 ├── requirements.txt                # runtime dependencies
-├── build_annotation_candidates.py  # heuristic pre-annotation script
-├── prepare_hf_dataset.py           # builds final balanced HF dataset splits
+├── build_annotation_candidates.py  # reference: heuristic pre-annotation script*
+├── prepare_hf_dataset.py           # reference: builds final balanced HF dataset splits*
 ├── train_classifier.py             # training + evaluation pipeline
 ├── app.py                          # Gradio demo (HF Space entry point)
-└── data/
-    ├── annotation/
-    │   ├── watsonx_docs_annotation_candidates.csv     # heuristic candidates
-    │   └── watsonx_docs_annotation_candidates_1.csv   # human-reviewed file
-    └── hf_dataset/
-        ├── train.csv
-        ├── validation.csv
-        ├── test.csv
-        ├── README.md               # HF dataset card
-        └── dataset_info.json
+└── results/
+    ├── metrics.json                # all three conditions, train + test
+    ├── confusion_matrix_A.png
+    ├── confusion_matrix_B.png
+    ├── confusion_matrix_C.png
+    └── error_analysis.csv          # misclassified test examples
 ```
 
-The `results/` and `models/` directories are produced locally by
-`train_classifier.py` and are not committed — they are regenerated
-deterministically from the dataset and seed.
+The dataset itself is hosted on the Hugging Face Hub; the `data/` directory
+is not committed. The `models/` directory is created locally by
+`train_classifier.py` (containing `best_model.joblib` and
+`best_model_name.txt`) and is regenerated deterministically from the dataset
+and seed.
 
-## 6. Reproducing the Experiments
+\* The two annotation scripts are kept as a reference for how the dataset
+was constructed. To re-run them, download the source corpus from
+[`ibm-research/watsonxDocsQA`](https://huggingface.co/datasets/ibm-research/watsonxDocsQA)
+into `data/annotation/` and follow the steps in
+[`annotation.md`](annotation.md).
+
+## 5. Reproducing the Experiments
 
 The pipeline runs end-to-end on CPU in a few minutes; a GPU is detected
 automatically if available.
@@ -139,8 +145,8 @@ automatically if available.
 ### Step 1 - Set up a virtual environment
 
 ```bash
-git clone https://github.com/<your-org>/IR-HW1.git
-cd IR-HW1
+git clone https://github.com/itsjhuang/watsonx-docs-type-classifier.git
+cd watsonx-docs-type-classifier
 
 python -m venv .venv
 source .venv/bin/activate        # on Windows: .venv\Scripts\activate
@@ -156,7 +162,8 @@ python train_classifier.py
 
 This will:
 
-1. load the train/validation/test CSVs from `data/hf_dataset/`,
+1. load the train/validation/test splits from the Hugging Face Hub
+   (`itsjhuang/watsonx-docs-document-type`),
 2. encode each split with both embedding models (cached, computed once per
    model),
 3. fit the three classifiers on the train split,
@@ -178,7 +185,7 @@ documentation page (title + opening text) and get a confidence score for each
 class. The same `app.py` is the entry point for the deployed Hugging Face
 Space.
 
-## 7. License and Attribution
+## 6. License and Attribution
 
 The source documentation text comes from the public IBM Watsonx documentation
 via the `ibm-research/watsonxDocsQA` Hugging Face dataset. Any downstream use
